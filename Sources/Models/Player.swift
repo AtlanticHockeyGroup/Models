@@ -10,7 +10,7 @@ import Fluent
 
 public final class Player: Model, Content{
     
-    public static let schema = "users"
+    public static let schema = "players"
     
     
     @ID(key: .id)
