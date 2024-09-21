@@ -15,13 +15,17 @@ public final class Skill: Model, Content{
     @ID(key: .id)
     public var id: UUID?
     
-    @Field(key: "name")
-    public var name: String
+    @Field(key: "name_en")
+    public var nameEn: String
+    
+    @Field(key: "name_fr")
+    public var nameFr: String
     
     public init(){}
     
-    public init(id: UUID? = nil, name: String){
+    public init(id: UUID? = nil, nameEn: String, nameFr: String){
         self.id = id
-        self.name = name
+        self.nameEn = nameEn
+        self.nameFr = nameFr
     }
 }
