@@ -10,7 +10,7 @@ import Fluent
 
 public final class Report: Model, Content {
     
-    public static let schemas = "reports"
+    public static let schema = "reports"
     
     @ID(key: .id)
     public var id: UUID?
