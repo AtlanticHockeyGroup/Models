@@ -8,9 +8,9 @@
 import Vapor
 import Fluent
 
-public final class Evaluation: Model, Content{
+public final class Rating: Model, Content{
     
-    public static let schema = "evluations"
+    public static let schema = "ratings"
     
     @ID(key: .id)
     public var id: UUID?
