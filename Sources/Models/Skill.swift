@@ -21,11 +21,19 @@ public final class Skill: Model, Content{
     @Field(key: "name_fr")
     public var nameFr: String
     
+    @Field(key: "desc_en")
+    public var descEn: String
+    
+    @Field(key: "desc_fr")
+    public var descFr: String
+    
     public init(){}
     
-    public init(id: UUID? = nil, nameEn: String, nameFr: String){
+    public init(id: UUID? = nil, nameEn: String, nameFr: String, descEn: String, descFr: String){
         self.id = id
         self.nameEn = nameEn
         self.nameFr = nameFr
+        self.descEn = descEn
+        self.descFr = descFr
     }
 }

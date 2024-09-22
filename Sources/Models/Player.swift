@@ -12,7 +12,6 @@ public final class Player: Model, Content{
     
     public static let schema = "players"
     
-    
     @ID(key: .id)
     public var id: UUID?
     
@@ -22,13 +21,17 @@ public final class Player: Model, Content{
     @Field(key: "last_name")
     public var lastName: String
     
+    @Field(key: "group_id")
+    public var groupId: UUID
+    
     public init(){
         
     }
     
-    public init(id: UUID? = nil, firstName: String, lastName: String){
+    public init(id: UUID? = nil, firstName: String, lastName: String, groupId: UUID){
         self.id = id
         self.firstName = firstName
         self.lastName = lastName
+        self.groupId = groupId
     }
 }
