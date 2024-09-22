@@ -21,7 +21,7 @@ public final class Camp: Model, Content{
     @Field(key: "start_date")
     public var startDate: Date
     
-    @Field(key: "end_data")
+    @Field(key: "end_date")
     public var endDate: Date
     
     public init(){}
