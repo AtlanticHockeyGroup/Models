@@ -18,6 +18,10 @@ public final class Rating: Model, Content{
     @Field(key: "player_id")
     public var playerId: UUID
     
+    @Field(key: "camp_id")
+    public var campId: UUID
+
+    
     @Field(key: "skill_id")
     public var skillId: UUID
     
@@ -29,9 +33,10 @@ public final class Rating: Model, Content{
     
     public init(){}
     
-    public init(id: UUID? = nil, playerId: UUID, skillId: UUID, value: Int, notes: String){
+    public init(id: UUID? = nil, playerId: UUID, campId: UUID, skillId: UUID, value: Int, notes: String){
         self.id = id
         self.playerId = playerId
+        self.campId = campId
         self.skillId = skillId
         self.value = value
         self.notes = notes
