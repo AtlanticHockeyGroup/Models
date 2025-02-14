@@ -24,7 +24,7 @@ public final class Group: Model, Content {
     
     // This could be a camp or group id
     @Field(key: "parent_id")
-    public var parentId: UUID
+    public var parentId: UUID?
     
     // Indicates nesting of group. If Tier = 1, parent is camp.
     // If Tier = 2 parent is group with tier = 1
@@ -35,7 +35,7 @@ public final class Group: Model, Content {
     
     public init(){}
     
-    public init(id: UUID? = nil, groupName: String, campId: UUID, parentId: UUID, groupTier: Int ){
+    public init(id: UUID? = nil, groupName: String, campId: UUID, parentId: UUID? = nil, groupTier: Int ){
         self.id = id
         self.groupName = groupName
         self.campId = campId
