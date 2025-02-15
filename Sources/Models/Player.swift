@@ -24,7 +24,7 @@ public final class Player: Model, Content{
     @Field(key: "group_id")
     public var groupId: UUID
     
-    @Field(key: "campp_id")
+    @Field(key: "camp_id")
     public var campId: UUID
     
     public init(){
