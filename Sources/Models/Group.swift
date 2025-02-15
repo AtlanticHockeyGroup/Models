@@ -35,7 +35,7 @@ public final class Group: Model, Content {
     
     public init(){}
     
-    public init(id: UUID? = nil, groupName: String, campId: UUID, parentId: UUID? = nil, groupTier: Int ){
+    public init(id: UUID? = nil, groupName: String, campId: UUID, parentId: UUID?, groupTier: Int ){
         self.id = id
         self.groupName = groupName
         self.campId = campId
