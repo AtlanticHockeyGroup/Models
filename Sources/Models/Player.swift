@@ -24,14 +24,18 @@ public final class Player: Model, Content{
     @Field(key: "group_id")
     public var groupId: UUID
     
+    @Field(key: "campp_id")
+    public var campId: UUID
+    
     public init(){
         
     }
     
-    public init(id: UUID? = nil, firstName: String, lastName: String, groupId: UUID){
+    public init(id: UUID? = nil, firstName: String, lastName: String, groupId: UUID, campId: UUID){
         self.id = id
         self.firstName = firstName
         self.lastName = lastName
         self.groupId = groupId
+        self.campId = campId
     }
 }
